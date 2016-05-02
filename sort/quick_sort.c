@@ -34,7 +34,7 @@ void print_array(int *a, int count)
 int *new_array(int count)
 {
 	int *a = (int*)malloc(count*sizeof(int));
-	while (--count > 0) {
+	while (--count >= 0) {
 		a[count] = rand();
 	}
 	return a;
